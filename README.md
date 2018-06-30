@@ -8,6 +8,10 @@ Notes:
 
 ```
 
+blogdown::install_hugo()
+
 blogdown::install_theme("digitalcraftsman/hugo-agency-theme", theme_example = TRUE, update_config = TRUE)
+
+blogdown::serve_site()
 
 ```

@@ -4,6 +4,8 @@ languageCode = "en-us"
 title = "Agency"
 theme = "hugo-agency-theme"
 
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+
 # Enter your tracking code to enable Google Analytics
 googleAnalytics = ""
 
@@ -46,12 +48,12 @@ googleAnalytics = ""
 
   # Navigation
   [params.navigation]
-    brand = "The Agency"
+    brand = "Open Oceans"
     # Optional logo as brand stored in img/
     #logo = "logo.svg"
     services = "Services"
-    portfolio = "Portfolio"
-    about = "About"
+    #portfolio = "Portfolio"
+   # about = "About"
     team = "Team"
     contact = "Contact"
 
@@ -76,115 +78,69 @@ googleAnalytics = ""
   [params.hero]
     # To change the background image of the hero, replace 'header-bg.jpg' in
     # the 'static/img' folder.
-    title = "Welcome To Our Studio!"
-    subtitle = "It's nice to meet you"
-    buttonText = "Tell me more"
+    title = "Open Oceans"
+    subtitle = "Open science solutions for healthy oceans"
+    #buttonText = "Tell me more"
 
 
   # Services section
   [params.services]
     enable = true
     title = "Services"
-    subtitle = "Lorem ipsum dolor sit amet consectetur."
+    #subtitle = "Lorem ipsum dolor sit amet consectetur."
 
-    [[params.services.row]]
+   [[params.services.row]]
 
     [[params.services.row.list]]
-      icon = "fa-shopping-cart"
-      title = "E-Commerce"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      #icon = "fa-shopping-cart"
+      title = "Ocean Health Index"
+      description = "We can support you as you lead your own ocean health assessment, ranging from providing guidance to leading the analyses."
       url = "#"
 
     [[params.services.row.list]]
-      icon = "fa-laptop"
-      title = "Responsive Design"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      #icon = "fa-laptop"
+      title = "Cumulative Human Impacts"
+      description = "We can lead cumulative human impact mapping for the oceans at global and smaller scales."
       url = "#"
 
     [[params.services.row.list]]
-      icon = "fa-lock"
-      title = "Web"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      #icon = "fa-lock"
+      title = "Marine Indicators"
+      description = "Our expertise includes the theory and practice of good indicator development, for example fisheries and biodiversity indicators."
       url = "#"
-
-  # Portfolio section
-  [params.portfolio]
-    enable = true
-    # All projects defined in their own files. You can find example projects
-    # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
-    # at the root of this Hugo site.
-    # For more informtion take a look at the README.
-    title = "Portfolio"
-    subtitle = "Lorem ipsum dolor sit amet consectetur."
-
-    [params.portfolio.modal]
-      client = "Client"
-      date = "Date"
-      category = "Category"
-      buttonText = "Close project"
-
-
-    # About section
-  [params.about]
-    enable = true
-    title = "About"
-    subtitle = "Lorem ipsum dolor sit amet consectetur."
-    endpoint = "Be part<br>of our<br>story!"
-
-    # The events will be listed from the top to the bottom.
-    # All images are stored under 'static/img/about'.
-    # Replace them with your own.
-    [[params.about.events]]
-      img = "1.jpg"
-      date = "2009-2011"
-      title = "Our Humble Beginnings"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-
-    [[params.about.events]]
-      img = "2.jpg"
-      date = "March 2011"
-      title = "An Agency is Born"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-
-    [[params.about.events]]
-      img = "3.jpg"
-      date = "December 2012"
-      title = "Our Humble Beginnings"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-
-    [[params.about.events]]
-      img = "4.jpg"
-      date = "July 2014"
-      title = "Phase Two Expansion"
-      description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-
+      
+      [[params.services.row.list]]
+      #icon = "fa-lock"
+      title = "Other Analyses and Reporting"
+      description = "We complete short-term analyses and reporting, often exploratory or proof-of concept."
+      url = "#"
 
   # Team section
   [params.team]
     enable = true
     # Possibility to center items
     #center = true
-    title = "Our amazing team"
-    subtitle = "Lorem ipsum dolor sit amet consectetur."
-    description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."
+    title = "Our team"
+    #subtitle = "Lorem ipsum dolor sit amet consectetur."
+    #description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde."
 
     # All team member's pictures are stored under 'static/img/team'.
     # Replace them with your own too.
     # Suggestion: Image size should be at least 360px*360px or the alignment might be affected.
     [[params.team.members]]
       img = "1.jpg"
-      name = "Kay Garland"
-      position = "Lead Designer"
-      reportsTo = "CTO"
-      livesIn = "[Munich, Germany](#some-maps-url)"
-      scope = [
-        "UX for [member dashboard](#)",
-        "Maintainer for [awesome-project](#)",
-        "Open Source [community management](#)"
-      ]
-      # For bio markdown and even multiline strings are available.
-      bio = """Kay is an awesome Lead Designer with heaps of experience in the field of UX.
-She worked at Pied Piper for years until they went belly up."""
+      name = "Ben Halpern"
+      position = "Role?"
+      #reportsTo = "CTO"
+      #livesIn = "[Munich, Germany](#some-maps-url)"
+      #scope = [
+      #  "UX for [member dashboard](#)",
+      #  "Maintainer for [awesome-project](#)",
+      #  "Open Source [community management](#)"
+      #]
+      ## For bio markdown and even multiline strings are available.
+      #bio = """Kay is an awesome Lead Designer with heaps of experience in the field of UX.
+#She worked at Pied Piper for years until they went belly up."""
       social = [
         ["fa-twitter", "#"],
         ["fa-facebook", "#"],
@@ -193,8 +149,8 @@ She worked at Pied Piper for years until they went belly up."""
 
     [[params.team.members]]
       img = "2.jpg"
-      name = "Larry Parker"
-      position = "Lead Marketer"
+      name = "Courtney Scarborough"
+      position = "Role?"
       social = [
         ["fa-twitter", "#"],
         ["fa-facebook", "#"],
@@ -203,13 +159,33 @@ She worked at Pied Piper for years until they went belly up."""
 
     [[params.team.members]]
       img = "3.jpg"
-      name = "Diana Pertersen"
-      position = "Lead Developer"
+      name = "Julie Lowndes"
+      position = "Role?"
       social = [
         ["fa-twitter", "#"],
         ["fa-facebook", "#"],
         ["fa-linkedin", "#"]
       ]
+
+    [[params.team.members]]
+      img = "3.jpg"
+      name = "Melanie Frazier"
+      position = "Role?"
+      social = [
+        ["fa-twitter", "#"],
+        ["fa-facebook", "#"],
+        ["fa-linkedin", "#"]
+      ]
+      
+    [[params.team.members]]
+      img = "3.jpg"
+      name = "Jamie Afflerbach"
+      position = "Role?"
+      social = [
+        ["fa-twitter", "#"],
+        ["fa-facebook", "#"],
+        ["fa-linkedin", "#"]
+      ]      
 
   # Client section
     [params.clients_list]
