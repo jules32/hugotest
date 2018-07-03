@@ -111,9 +111,22 @@ googleAnalytics = ""
       
       [[params.services.row.list]]
       #icon = "fa-lock"
+      title = ""
+      #description = "We complete short-term analyses and reporting, often exploratory or proof-of concept."
+      #url = "#"
+
+      [[params.services.row.list]]
+      #icon = "fa-lock"
       title = "Other Analyses and Reporting"
       description = "We complete short-term analyses and reporting, often exploratory or proof-of concept."
       url = "#"
+
+      [[params.services.row.list]]
+      #icon = "fa-lock" 
+      title = ""
+      #description = "We complete short-term analyses and reporting, often exploratory or proof-of concept."
+      #url = "#"
+
 
   # Team section
   [params.team]
